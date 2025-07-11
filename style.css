@@ -10,6 +10,12 @@ body {
   color: #FEF2BF;
 }
 
+/* footer{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  color: #FEF2BF;
+} */
+
 .container {
   display: block;
   width: 50%;

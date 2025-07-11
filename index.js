@@ -147,14 +147,14 @@ $(".btn").on("click", function () {
     }
 
     if (i === gamePattern.length){
-            console.log("arrays are equal")
+            // console.log("arrays are equal")
             setTimeout(() => {
             calling_next_sequence()
             }, 1000);
             //reset the user clicked parameters
             userClickedPattern = [];
             i=0;
-            console.log(i)
+            // console.log(i)
         }
         
     }

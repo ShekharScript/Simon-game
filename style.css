@@ -1,52 +1,28 @@
 body {
-  background: linear-gradient(270deg, #ff416c, #ff4b2b, #1e90ff, #32cd32);
-  background-size: 400% 400%;
-  animation: gradientBG 6s infinite alternate;
   text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin: 5%;
+  font-size: 3rem;
+  margin:  5%;
   color: #FEF2BF;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-/* Animated text */
-h1 {
-  animation: glow 1.5s infinite alternate;
-  font-size: 80px;
-}
-
-@keyframes glow {
-  0% { text-shadow: 0 0 10px #fff, 0 0 20px #ff416c, 0 0 30px #ff4b2b; }
-  100% { text-shadow: 0 0 20px #fff, 0 0 30px #1e90ff, 0 0 40px #32cd32; }
-}
-
-/* 2x2 Grid Layout */
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: block;
   width: 50%;
-  max-width: 400px;
   margin: auto;
 }
 
-/* Buttons */
 .btn {
-  height: 150px;
-  width: 150px;
-  border: 8px solid #fff;
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
   border-radius: 20%;
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-}
-
-.btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 0 30px white;
 }
 
 .game-over {
@@ -54,51 +30,27 @@ h1 {
   opacity: 0.8;
 }
 
-/* Button colors */
-.red { background-color: red; border-color: #a81b1b; }
-.green { background-color: green; border-color: #33ff33; }
-.blue { background-color: blue; border-color: #3399ff; }
-.yellow { background-color: yellow; border-color: #f3d972; }
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
 
 .pressed {
-  box-shadow: 0 0 50px white, 0 0 30px #ffeb3b;
-  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px white;
+  background-color: grey;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  body {
-    font-size: 1.5rem;
-    margin: 3%;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .btn {
-    height: 120px;
-    width: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 250px;
-  }
-
-  .btn {
-    height: 100px;
-    width: 100px;
-  }
+.flash{
+  background-color: black;
 }
